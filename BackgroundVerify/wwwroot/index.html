@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Verification</title>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+</head>
+<body>
+    <form class="col-lg-3 col-sm-6" id="verificationForm">
+        <div class="row p-2">
+            <div class="col-12 p-1">
+                <h1>Employment Verification</h1>
+                <div class="card border-0 p-3 shadow border-top border-5 rounded">
+                    <div class="card-body pb-0">
+                        <div class="pl-1">
+                            <label for="employeeId">Employee ID:</label>
+                            <input type="number" id="employeeId" name="employeeId" required>
+                        </div>
+                        <div class="pl-1">
+                            <label for="companyName">Company Name:</label>
+                            <input type="text" id="companyName" name="companyName" required>
+                        </div>
+                        <div class="pl-1">
+                            <label for="verificationCode">Verification Code:</label>
+                            <input type="text" id="verificationCode" name="verificationCode" required>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary bg-gradient border-0 form-control" type="submit">Verify</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center" id="result"></p>
+    </form>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

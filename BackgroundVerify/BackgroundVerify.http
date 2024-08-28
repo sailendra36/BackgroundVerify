@@ -1,0 +1,6 @@
+@BackgroundVerify_HostAddress = http://localhost:5049
+
+GET {{BackgroundVerify_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
